@@ -1,4 +1,4 @@
-import type { CoinResult, IValidator, UnsubscribeFunc} from '@fduenascoink/oink-addons';
+import type { CoinResult, IPelicano, UnsubscribeFunc} from '@fduenascoink/oink-addons';
 import { Pelicano as PelicanoAddon } from '@fduenascoink/oink-addons';
 import { EventEmitter } from 'events';
 
@@ -10,8 +10,9 @@ import { PluginError, getCapacitorElectronConfig } from './utils';
 export class Pelicano extends EventEmitter implements PelicanoPlugin  {
   private static readonly COIN_EVENT = "coinInsert";
   private static readonly COIN_WARNING_EVENT = "coinInsertWarning";
-  
-  pelicano: IValidator;
+  private static readonly MAX_VALIDATOR_USAGE = 750_000;
+
+  pelicano: IPelicano;
   private channels = new CoinChannels();
   private unsubscribeFn?: UnsubscribeFunc;
 
@@ -50,9 +51,13 @@ export class Pelicano extends EventEmitter implements PelicanoPlugin  {
     return response;
   }
 
-  getUsage(): Promise<UsageResponse> {
-    // TODO: hay que modificar el addon para implementar la funcion getInsertCoin.
-    throw new Error('Method not implemented.');
+  async getUsage(): Promise<UsageResponse> {
+    const { insertedCoins: quantity, ...response } = this.pelicano.getInsertedCoins();
+    if (response.statusCode !== 206) {
+      throw new PluginError(response.message, response.statusCode);
+    }
+    const usagePercent = (quantity * 100) / Pelicano.MAX_VALIDATOR_USAGE;
+    return { quantity, usagePercent, ...response };
   }
 
   async cleanDevice(): Promise<ResponseStatus> {
