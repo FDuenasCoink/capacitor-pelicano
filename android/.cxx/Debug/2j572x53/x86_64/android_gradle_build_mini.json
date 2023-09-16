@@ -1,0 +1,45 @@
+{
+  "buildFiles": [
+    "/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/src/main/cpp/CMakeLists.txt",
+    "/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/src/main/cpp/pelicano/CMakeLists.txt",
+    "/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/src/main/cpp/spdlog/CMakeLists.txt",
+    "/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/src/main/cpp/spdlog/cmake/ide.cmake",
+    "/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/src/main/cpp/spdlog/cmake/utils.cmake"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/coink/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/.cxx/Debug/2j572x53/x86_64",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/coink/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/.cxx/Debug/2j572x53/x86_64",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "Pelicano_Wrapper::@63243a9e6804539217c7": {
+      "artifactName": "Pelicano_Wrapper",
+      "abi": "x86_64",
+      "output": "/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/build/intermediates/cxx/Debug/2j572x53/obj/x86_64/libPelicano_Wrapper.so",
+      "runtimeFiles": [
+        "/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/build/intermediates/cxx/Debug/2j572x53/obj/x86_64/libPelicano.so"
+      ]
+    },
+    "spdlog::@d269c8109d32a9027337": {
+      "artifactName": "spdlog",
+      "abi": "x86_64",
+      "output": "/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/.cxx/Debug/2j572x53/x86_64/spdlog/libspdlogd.a",
+      "runtimeFiles": []
+    },
+    "Pelicano::@63243a9e6804539217c7": {
+      "artifactName": "Pelicano",
+      "abi": "x86_64",
+      "output": "/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/build/intermediates/cxx/Debug/2j572x53/obj/x86_64/libPelicano.so",
+      "runtimeFiles": []
+    }
+  }
+}

@@ -1,0 +1,9 @@
+/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/.cxx/Debug/2j572x53/arm64-v8a/CMakeFiles/edit_cache.dir
+/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/.cxx/Debug/2j572x53/arm64-v8a/CMakeFiles/rebuild_cache.dir
+/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/.cxx/Debug/2j572x53/arm64-v8a/spdlog/CMakeFiles/spdlog.dir
+/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/.cxx/Debug/2j572x53/arm64-v8a/spdlog/CMakeFiles/edit_cache.dir
+/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/.cxx/Debug/2j572x53/arm64-v8a/spdlog/CMakeFiles/rebuild_cache.dir
+/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/.cxx/Debug/2j572x53/arm64-v8a/pelicano/CMakeFiles/Pelicano.dir
+/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/.cxx/Debug/2j572x53/arm64-v8a/pelicano/CMakeFiles/Pelicano_Wrapper.dir
+/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/.cxx/Debug/2j572x53/arm64-v8a/pelicano/CMakeFiles/edit_cache.dir
+/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/.cxx/Debug/2j572x53/arm64-v8a/pelicano/CMakeFiles/rebuild_cache.dir

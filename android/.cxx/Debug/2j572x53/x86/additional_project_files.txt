@@ -1,0 +1,3 @@
+/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/src/main/java/hardware/pelicano/PelicanoControl.java
+/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/src/main/java/hardware/pelicano/PelicanoControlJNI.java
+/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/src/main/cpp/pelicano/PelicanoControl.i

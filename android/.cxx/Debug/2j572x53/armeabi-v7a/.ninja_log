@@ -1,0 +1,20 @@
+# ninja log v5
+2	335	1694875046640219185	pelicano/CMakeFiles/Pelicano.dir/StateMachine.cpp.o	e55e8b6871d47b70
+1	367	1694875046671661199	spdlog/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o	9b97c5e8260adca3
+2	372	1694875046677833893	pelicano/CMakeFiles/Pelicano.dir/PelicanoControl.cpp.o	3eba7cb73d3d9c13
+1	434	1694875046738660176	spdlog/CMakeFiles/spdlog.dir/src/cfg.cpp.o	f45f062d34e2e1d0
+1	576	1694875046878888992	spdlog/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o	3a6b341b03b26e2
+1	637	1694875046939815024	spdlog/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o	2c3133e180a57e69
+1	651	1694875046953177287	spdlog/CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.o	c7df04259d5747f7
+1	657	1694875046960026730	spdlog/CMakeFiles/spdlog.dir/src/async.cpp.o	c1569cd74d188e21
+1	941	1694875047240340404	pelicano/CMakeFiles/Pelicano.dir/ValidatorPelicano.cpp.o	85fff151fa8ac37d
+0	1490	1694875047781051836	spdlog/CMakeFiles/spdlog.dir/src/spdlog.cpp.o	46329fa295fbc5be
+1490	1516	1694875047823823000	spdlog/libspdlogd.a	104272c8bb76c457
+1516	1600	1694875047873962048	/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/build/intermediates/cxx/Debug/2j572x53/obj/armeabi-v7a/libPelicano.so	7b12c6ec557b6af3
+1600	1778	1694875048085769205	/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/src/main/java/hardware/pelicano/PelicanoControlJAVA_wrap.cxx	7006c063ebaf67a6
+1600	1778	1694875048085769205	/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/src/main/java/hardware/pelicano/PelicanoControl.java	7006c063ebaf67a6
+1600	1778	1694875048085769205	/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/src/main/java/hardware/pelicano/PelicanoControlJNI.java	7006c063ebaf67a6
+1778	2106	1694875048411626444	pelicano/CMakeFiles/Pelicano_Wrapper.dir/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/src/main/java/hardware/pelicano/PelicanoControlJAVA_wrap.cxx.o	37252ddd4ffe45d1
+2106	2145	1694875048447822573	/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/build/intermediates/cxx/Debug/2j572x53/obj/armeabi-v7a/libPelicano_Wrapper.so	201b65cc22886b15
+2	351	1694875307474493520	pelicano/CMakeFiles/Pelicano_Wrapper.dir/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/src/main/java/hardware/pelicano/PelicanoControlJAVA_wrap.cxx.o	37252ddd4ffe45d1
+352	394	1694875307515472802	/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/build/intermediates/cxx/Debug/2j572x53/obj/armeabi-v7a/libPelicano_Wrapper.so	201b65cc22886b15

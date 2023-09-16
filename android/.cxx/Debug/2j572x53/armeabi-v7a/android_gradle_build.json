@@ -1,0 +1,58 @@
+{
+  "buildFiles": [
+    "/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/src/main/cpp/CMakeLists.txt",
+    "/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/src/main/cpp/pelicano/CMakeLists.txt",
+    "/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/src/main/cpp/spdlog/CMakeLists.txt",
+    "/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/src/main/cpp/spdlog/cmake/ide.cmake",
+    "/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/src/main/cpp/spdlog/cmake/utils.cmake"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/coink/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/.cxx/Debug/2j572x53/armeabi-v7a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/coink/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/.cxx/Debug/2j572x53/armeabi-v7a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "Pelicano::@63243a9e6804539217c7": {
+      "toolchain": "toolchain",
+      "abi": "armeabi-v7a",
+      "artifactName": "Pelicano",
+      "output": "/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/build/intermediates/cxx/Debug/2j572x53/obj/armeabi-v7a/libPelicano.so",
+      "runtimeFiles": []
+    },
+    "Pelicano_Wrapper::@63243a9e6804539217c7": {
+      "toolchain": "toolchain",
+      "abi": "armeabi-v7a",
+      "artifactName": "Pelicano_Wrapper",
+      "output": "/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/build/intermediates/cxx/Debug/2j572x53/obj/armeabi-v7a/libPelicano_Wrapper.so",
+      "runtimeFiles": [
+        "/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/build/intermediates/cxx/Debug/2j572x53/obj/armeabi-v7a/libPelicano.so"
+      ]
+    },
+    "spdlog::@d269c8109d32a9027337": {
+      "toolchain": "toolchain",
+      "abi": "armeabi-v7a",
+      "artifactName": "spdlog",
+      "output": "/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/.cxx/Debug/2j572x53/armeabi-v7a/spdlog/libspdlogd.a"
+    }
+  },
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "/Users/coink/Library/Android/sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang.lld",
+      "cppCompilerExecutable": "/Users/coink/Library/Android/sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++.lld"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp",
+    "cxx"
+  ]
+}

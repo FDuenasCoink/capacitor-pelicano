@@ -1,0 +1,18 @@
+# ninja log v5
+0	322	1694875051322653047	spdlog/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o	b17d65eca486ab5c
+1	379	1694875051380703126	pelicano/CMakeFiles/Pelicano.dir/PelicanoControl.cpp.o	cbe5575d9cc062c
+0	420	1694875051422242367	spdlog/CMakeFiles/spdlog.dir/src/cfg.cpp.o	d0f2cc6f415f2fd5
+1	431	1694875051434553548	pelicano/CMakeFiles/Pelicano.dir/StateMachine.cpp.o	b9cdc4e0bede3a01
+0	548	1694875051548356546	spdlog/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o	199f51e7e9508441
+1	565	1694875051564483802	spdlog/CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.o	5258b55e33f9fe3f
+0	566	1694875051567651170	spdlog/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o	eb0aeb0bde6007fb
+0	570	1694875051570920163	spdlog/CMakeFiles/spdlog.dir/src/async.cpp.o	62c5fa726048b4f7
+1	806	1694875051804439687	pelicano/CMakeFiles/Pelicano.dir/ValidatorPelicano.cpp.o	ba6abf36832aa89a
+0	1287	1694875052279617633	spdlog/CMakeFiles/spdlog.dir/src/spdlog.cpp.o	cffae82c424aa29e
+1287	1312	1694875052317461000	spdlog/libspdlogd.a	104272c8bb76c457
+1312	1397	1694875052366643815	/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/build/intermediates/cxx/Debug/2j572x53/obj/x86_64/libPelicano.so	1efce3dd4861f06b
+1397	1576	1694875052580914048	/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/src/main/java/hardware/pelicano/PelicanoControlJAVA_wrap.cxx	7ba725bd959fa3d5
+1397	1576	1694875052580914048	/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/src/main/java/hardware/pelicano/PelicanoControl.java	7ba725bd959fa3d5
+1397	1576	1694875052580914048	/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/src/main/java/hardware/pelicano/PelicanoControlJNI.java	7ba725bd959fa3d5
+1576	1883	1694875052886114246	pelicano/CMakeFiles/Pelicano_Wrapper.dir/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/src/main/java/hardware/pelicano/PelicanoControlJAVA_wrap.cxx.o	9d3eb9c93369b062
+1884	1920	1694875052920178003	/Users/coink/Desktop/projects/oink-hardware-plugins/capacitor-pelicano/android/build/intermediates/cxx/Debug/2j572x53/obj/x86_64/libPelicano_Wrapper.so	1cff0ababce5dfaa
