@@ -82,7 +82,7 @@ export class Pelicano extends EventEmitter implements PelicanoPlugin  {
     const testStatus = this.pelicano.testStatus();
     return {
       ...testStatus,
-      date: new Date().toString(),
+      date: new Date().toISOString(),
     };
   }
 

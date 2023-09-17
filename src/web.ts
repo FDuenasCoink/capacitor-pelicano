@@ -62,7 +62,7 @@ export class PelicanoPluginWeb extends WebPlugin implements PelicanoPluginBase {
       message: "web simulated response",
       aditionalInfo: "",
       priority: 0,
-      date: new Date().toString(),
+      date: new Date().toISOString(),
     }
   }
 
