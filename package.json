@@ -38,7 +38,7 @@
     "eslint": "eslint . --ext ts",
     "prettier": "prettier \"**/*.{css,html,ts,js,java}\"",
     "swiftlint": "node-swiftlint",
-    "docgen": "docgen --api PelicanoPluginBase --output-readme README.md --output-json dist/docs.json",
+    "docgen": "docgen --api PelicanoPlugin --output-readme README.md --output-json dist/docs.json",
     "build": "npm run clean && npm run docgen && tsc && rollup -c rollup.config.js && npm run build-electron",
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
