@@ -1,6 +1,8 @@
 import type { CoinResult, IPelicano, UnsubscribeFunc} from '@fduenascoink/oink-addons';
 import { Pelicano as PelicanoAddon } from '@fduenascoink/oink-addons';
+import { app } from 'electron';
 import { EventEmitter } from 'events';
+import { join } from 'path';
 
 import type { ChannelData, ChannelInfo, DeviceStatus, PelicanoPlugin, ResponseStatus, UsageResponse } from '../../src/definitions';
 
@@ -19,12 +21,13 @@ export class Pelicano extends EventEmitter implements PelicanoPlugin  {
   constructor() {
     super();
     const config = getCapacitorElectronConfig('Pelicano');
+    const logsPath = app.getPath('documents');
     this.pelicano = new PelicanoAddon({
       maxCritical: config.maxCritical ?? 3,
       warnToCritical: config.warnToCritical ?? 10,
       maximumPorts: config.maximumPorts ?? 10,
       logLevel: config.logLevel ?? 1,
-      logPath: 'logs/pelicano.log',
+      logPath: join(logsPath, 'oink-logs', 'pelicano.log'),
     });
   }
   

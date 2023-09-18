@@ -1,10 +1,10 @@
 import { WebPlugin } from '@capacitor/core';
 
-import type { ChannelData, ChannelInfo, DeviceStatus, PelicanoPluginBase, ResponseStatus, UsageResponse } from './definitions';
+import type { ChannelData, ChannelInfo, DeviceStatus, PelicanoPlugin, ResponseStatus, UsageResponse } from './definitions';
 import { Validator } from './lib/Validator';
 import { Logger } from './lib/logger';
 
-export class PelicanoPluginWeb extends WebPlugin implements PelicanoPluginBase {
+export class PelicanoPluginWeb extends WebPlugin implements PelicanoPlugin {
   private static readonly COINK_EVENT = 'coinInsert';
   private logger = new Logger('PELICANO');
   private validator = new Validator({

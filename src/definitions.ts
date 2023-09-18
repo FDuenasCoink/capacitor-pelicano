@@ -56,7 +56,7 @@ export interface UsageResponse extends ResponseStatus {
   usagePercent: number;
 }
 
-export interface PelicanoPluginBase {
+export interface PelicanoPlugin {
   /**
    * Function to get actual use of device.
    */
@@ -108,7 +108,7 @@ export interface PelicanoPluginBase {
   removeAllListeners(): Promise<void>;
 }
 
-export interface PelicanoPlugin extends PelicanoPluginBase {
+export interface PelicanoPluginElectron extends PelicanoPlugin {
   removeListener?(event: string): void & Promise<void>;
   removeAllListeners(type?: string): void & Promise<void>;
   addListener(eventName: 'coinInsert', listenerFunc: (event: CoinEvent) => void): Promise<PluginListenerHandle> & PluginListenerHandle & string;
