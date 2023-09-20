@@ -90,7 +90,7 @@ export class Pelicano extends EventEmitter implements PelicanoPlugin  {
   }
 
   async startReader(): Promise<ResponseStatus> {
-    this.unsubscribeFn?.();
+    await this.unsubscribe();
     const response = this.pelicano.startReader();
     const status = response.statusCode;
     if (status !== 201 && status !== 202) {
@@ -102,7 +102,7 @@ export class Pelicano extends EventEmitter implements PelicanoPlugin  {
   }
 
   async stopReader(): Promise<ResponseStatus> {
-    this.unsubscribeFn?.();
+    await this.unsubscribe();
     const response = this.pelicano.stopReader();
     const status = response.statusCode;
     if (status !== 200) {
@@ -126,7 +126,7 @@ export class Pelicano extends EventEmitter implements PelicanoPlugin  {
   }
 
   async reset(): Promise<ResponseStatus> {
-    this.unsubscribeFn?.();
+    await this.unsubscribe();
     const response = this.pelicano.resetDevice();
     const status = response.statusCode;
     if (status !== 204) {
@@ -135,7 +135,7 @@ export class Pelicano extends EventEmitter implements PelicanoPlugin  {
     return response;
   }
   
-  async notifyCoin(coin: CoinResult) {
+  private async notifyCoin(coin: CoinResult) {
     const status = coin.statusCode;
     if (status === 303) return;
 
@@ -161,7 +161,7 @@ export class Pelicano extends EventEmitter implements PelicanoPlugin  {
       const value = 0;
       const event = { value, error };
       this.emit(Pelicano.COIN_EVENT, event);
-      this.unsubscribeFn?.();
+      await this.unsubscribe();
       return
     }
 
@@ -185,4 +185,14 @@ export class Pelicano extends EventEmitter implements PelicanoPlugin  {
     return super.removeListener(event, listener);
   }
   
+  private sleep() {
+    return new Promise(resolve => setTimeout(resolve, 800));
+  }
+
+  private async unsubscribe() {
+    if (!this.unsubscribeFn) return;
+    this.unsubscribeFn?.();
+    await this.sleep();
+  }
+
 }
