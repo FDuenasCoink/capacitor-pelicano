@@ -193,6 +193,7 @@ export class Pelicano extends EventEmitter implements PelicanoPlugin  {
     if (!this.unsubscribeFn) return;
     this.unsubscribeFn?.();
     await this.sleep();
+    this.unsubscribeFn = undefined;
   }
 
 }
