@@ -1,5 +1,5 @@
-import type { CoinResult, IPelicano, UnsubscribeFunc} from '@fduenascoink/oink-addons';
-import { Pelicano as PelicanoAddon } from '@fduenascoink/oink-addons';
+import type { CoinResult, IPelicano, UnsubscribeFunc} from '@fduenascoink/pelicano-addon';
+import { Pelicano as PelicanoAddon } from '@fduenascoink/pelicano-addon';
 import { app } from 'electron';
 import { EventEmitter } from 'events';
 import { join } from 'path';
