@@ -102,6 +102,7 @@ export class Pelicano extends EventEmitter implements PelicanoPlugin  {
   }
 
   async stopReader(): Promise<ResponseStatus> {
+    await this.unsubscribe();
     const coins = [50, 100, 200, 500, 1000];
     coins.forEach((coin) => this.channels.setChannel(coin, false));
     const { mask1, mask2 } = this.channels.getValue();
@@ -109,7 +110,6 @@ export class Pelicano extends EventEmitter implements PelicanoPlugin  {
     if (response.statusCode !== 203) {
       throw new PluginError(response.message, response.statusCode);
     }
-    await this.unsubscribe();
     response = this.pelicano.stopReader();
     const status = response.statusCode;
     if (status !== 200) {
