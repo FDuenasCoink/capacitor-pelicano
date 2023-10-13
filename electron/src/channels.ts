@@ -25,7 +25,7 @@ export class CoinChannels {
     if (!channelBits) return;
     this.channelBitState.forEach((channel, i) => {
       channel.forEach((_, j) => {
-        const pos = i + j + 1;
+        const pos = (i * channel.length) + j + 1;
         if (channelBits.includes(pos)) {
           this.channelBitState[i][j] = Number(active);
         }
